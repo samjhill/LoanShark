@@ -1,0 +1,213 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.french.bryan.tipcalculator.TipCalculator$PlaceholderFragment"
+    android:background="#FFF"
+    android:id="@+id/tableLayout"
+    android:padding="5dp"
+    android:stretchColumns="1,2,3"
+    android:shrinkColumns="1,2,3">
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="30dp" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/loanTotalTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loanTotal"
+            android:id="@+id/loanTextView"
+            android:textColor="#000"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/loanEditText"
+            android:text="@string/zeroDecimal"
+            android:layout_span="4"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/interestRateTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interestRateText"
+            android:id="@+id/interestRateTextView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/interestRateEditText"
+            android:text="10.0"
+            android:layout_span="4"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="37dp" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/yearMoPaymentTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:id="@+id/yearLabelTextView"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthlyPaymentLabelText"
+            android:id="@+id/monthlyPaymentLabelTextView"
+            android:textAlignment="center" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fiveTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/fiveYearsTextView"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeroDecimal"
+            android:id="@+id/fiveYearsMonthlyPaymentTextView"
+            android:textSize="8pt" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tenTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tenYearsText"
+            android:id="@+id/tenYearsTextView"
+            android:textSize="10pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeroDecimal"
+            android:id="@+id/tenYearsMonthlyPaymentTextView"
+            android:textSize="10pt" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fifteenTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fifteenYearsText"
+            android:id="@+id/fifteenYearsTextView"
+            android:textSize="15pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeroDecimal"
+            android:id="@+id/fifteenYearsMonthlyPaymentTextView"
+            android:textSize="15pt" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/twentyTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twentyYearsText"
+            android:id="@+id/twentyYearsTextView"
+            android:singleLine="false"
+            android:textSize="20pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeroDecimal"
+            android:id="@+id/twentyYearsMonthlyPaymentTextView"
+            android:textSize="20pt" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/twentyFiveTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twentyFiveYearsText"
+            android:id="@+id/twentyFiveYearsTextView"
+            android:singleLine="false"
+            android:textSize="25pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeroDecimal"
+            android:id="@+id/twentyFiveYearsMonthlyPaymentTextView"
+            android:textSize="25pt" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/thirtyTableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thirtyYearsText"
+            android:id="@+id/thirtyYearsTextView"
+            android:singleLine="false"
+            android:textSize="30pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeroDecimal"
+            android:id="@+id/thirtyYearsMonthlyPaymentTextView"
+            android:textSize="30pt" />
+    </TableRow>
+
+</TableLayout>

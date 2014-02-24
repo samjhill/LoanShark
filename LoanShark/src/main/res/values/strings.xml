@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoanShark</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="loanTotal">Loan total</string>
+    <string name="zeroDecimal">0.00</string>
+    <string name="yearLabelText">Year</string>
+    <string name="monthlyPaymentLabelText">Monthly payment</string>
+    <string name="interestRateText">Interest Rate (Percent) </string>
+    <string name="fiveYearsText">5</string>
+    <string name="tenYearsText">10</string>
+    <string name="fifteenYearsText">15</string>
+    <string name="twentyYearsText">20</string>
+    <string name="twentyFiveYearsText">25</string>
+    <string name="thirtyYearsText">30</string>
+
+</resources>
